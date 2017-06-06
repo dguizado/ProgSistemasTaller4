@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "cifrado.h"
+#include "codificacion.h"
 
 /*
  * 
@@ -16,7 +17,7 @@
 int main(int argc, char** argv) {
     
     int n;
-    char **frase[50];
+    char frase[50];
     
     if (argc!=4){
         
@@ -41,7 +42,7 @@ int main(int argc, char** argv) {
             claveMorse(argv[2]);
         }
         else if (strcmp(argv[3],"-a")==0){
-            char*clave[50];
+            char clave[50];
              printf("Ingrese Clave: \n");
             fgets(clave, 50, stdin);
             printf("Cifrado Autollave\n");
@@ -50,7 +51,7 @@ int main(int argc, char** argv) {
             claveMorse(argv[2]);
         }
         else if (strcmp(argv[3],"-p")==0) {
-            char*clave[50];
+            char clave[50];
              printf("Ingrese Clave: \n");
             fgets(clave, 50, stdin);
             printf("Cifrado Contraseña\n");

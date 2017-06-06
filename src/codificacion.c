@@ -110,5 +110,6 @@ char* claveMorse(char* mensaje){
 	else
 	   printf("Caracter invalido");
     }
+    return mensaje;
 
 }

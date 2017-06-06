@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <string.h>
 
 
@@ -76,7 +76,6 @@ char* cifradoAutollave(char* mensaje, char* clave){
 
 char* cifradoContrasena(char* mensaje, char* clave){
     int i;
-    int cont=0;
     for(i=0; i<strlen(mensaje); i++){
         
         if(mensaje[i]>=97 && mensaje[i]<122) {
